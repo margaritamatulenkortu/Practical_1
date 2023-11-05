@@ -50,7 +50,7 @@ public class News extends AppCompatActivity {
         }).get(NewsViewModel.class);
 
         viewModel.getNewsItems().observe(this, newsItems -> adapter.updateNewsItems(newsItems));
-        viewModel.fetchNews("tesla", "2023-10-27", "publishedAt", "1c9675c6d7bc4c25a2cbdc6968beb50a");
+        viewModel.fetchNews("tesla", "2023-10-27", "publishedAt", "YOUR_API");
     }
 
     public static class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.NewsViewHolder> {
